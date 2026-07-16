@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Marco de Correio — uma aplicação para trocar cartas, criar conversas e guardar palavras com significado."
+    />
+    <title>Marco de Correio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Marco de Correio, início">
+        <span class="brand-mark">✉</span>
+        <span>Marco de Correio</span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#guia">Guia</a>
+        <a href="#exemplo">Exemplo</a>
+        <a href="#privacidade">Privacidade</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Um lugar para escrever</p>
+          <h1>Cartas para escrever com imaginação e ler devagar.</h1>
+          <p class="lead">
+            O Marco de Correio é um espaço para dar forma a ideias, memórias e
+            ficções. Uma carta de cada vez, com cuidado pelas palavras.
+          </p>
+          <div class="store-buttons" aria-label="Disponibilidade da aplicação">
+            <button class="store-button apple" type="button" disabled>
+              <span class="store-icon"></span>
+              <span><small>Para iPhone e iPad</small>Disponível em breve</span>
+            </button>
+            <button class="store-button android" type="button" disabled>
+              <span class="store-icon">▶</span>
+              <span><small>Para Android</small>Disponível em breve</span>
+            </button>
+          </div>
+          <p class="device-note" id="device-note">
+            A aplicação estará disponível para telemóvel e tablet.
+          </p>
+        </div>
+
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="airmail-border">
+            <div class="stamp">MC</div>
+            <div class="postmark">MARCO<br />DE CORREIO</div>
+            <div class="address-lines">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="envelope-flap"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro" id="como-funciona">
+        <p class="eyebrow">Simples e humano</p>
+        <h2>Como funciona</h2>
+        <div class="steps">
+          <article>
+            <span class="step-number">1</span>
+            <h3>Escreve uma carta</h3>
+            <p>Cria a tua carta em PDF, escolhe uma imagem de capa e envia-a.</p>
+          </article>
+          <article>
+            <span class="step-number">2</span>
+            <h3>É revista com cuidado</h3>
+            <p>As cartas são moderadas antes de serem publicadas na comunidade.</p>
+          </article>
+          <article>
+            <span class="step-number">3</span>
+            <h3>Continua a correspondência</h3>
+            <p>Outras pessoas podem responder e criar ramos de correspondência.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="guide" id="guia">
+        <div class="guide-heading">
+          <p class="eyebrow">Guia de utilização</p>
+          <h2>Uma carta de cada vez.</h2>
+          <p>
+            Descobre cartas, encontra o que te inspira e começa uma correspondência.
+          </p>
+        </div>
+
+        <article class="guide-step">
+          <div class="guide-text">
+            <span>01</span>
+            <h3>Explora a Home</h3>
+            <p>Encontra cartas recentes, favoritas e sugestões para ti. Cada capa abre uma história diferente.</p>
+          </div>
+          <figure><img src="images/home.jpg" alt="Ecrã inicial da aplicação Marco de Correio" loading="lazy" /></figure>
+        </article>
+
+        <article class="guide-step reverse">
+          <div class="guide-text">
+            <span>02</span>
+            <h3>Pesquisa com intenção</h3>
+            <p>Filtra por utilizador, data, gostos e sentimentos para encontrar cartas que te despertem curiosidade.</p>
+          </div>
+          <figure><img src="images/search.jpg" alt="Ecrã de pesquisa avançada da aplicação" loading="lazy" /></figure>
+        </article>
+
+        <article class="guide-step">
+          <div class="guide-text">
+            <span>03</span>
+            <h3>Acompanha a correspondência</h3>
+            <p>Uma carta pode abrir vários ramos de conversa. Aqui, a Dulce e o Pedro respondem de forma diferente à mesma carta. Escolhe um ramo e segue o diálogo ao teu ritmo.</p>
+            <p class="guide-note"><strong>Envelope amarelo:</strong> assinala uma carta à qual podes responder.</p>
+          </div>
+          <figure><img src="images/correspondence.jpg" alt="Ecrã de correspondência com ramos de conversa" loading="lazy" /></figure>
+        </article>
+
+        <article class="guide-step reverse">
+          <div class="guide-text">
+            <span>04</span>
+            <h3>Lê a carta</h3>
+            <p>Abre a carta em PDF, vê a imagem de capa, guarda-a como favorita ou demonstra que gostaste.</p>
+          </div>
+          <figure><img src="images/read-letter.jpg" alt="Ecrã de leitura de uma carta em PDF" loading="lazy" /></figure>
+        </article>
+
+        <article class="guide-step">
+          <div class="guide-text">
+            <span>05</span>
+            <h3>Responde</h3>
+            <p>Escreve a tua resposta em PDF, escolhe uma imagem se quiseres e envia-a para revisão antes de ser publicada.</p>
+          </div>
+          <figure><img src="images/reply.jpg" alt="Ecrã para responder a uma carta" loading="lazy" /></figure>
+        </article>
+      </section>
+
+      <section class="example" id="exemplo">
+        <div class="example-copy">
+          <p class="eyebrow">Uma conversa, muitas perspetivas</p>
+          <h2>Cartas que continuam.</h2>
+          <p>
+            Cada resposta dá continuidade a uma carta, sem pressa. Podes guardar
+            favoritas, mostrar apreço e descobrir novas vozes.
+          </p>
+          <ul>
+            <li>Cartas e respostas em PDF</li>
+            <li>Ramos de conversa organizados</li>
+            <li>Favoritos e gostos</li>
+            <li>Leitura e partilha</li>
+          </ul>
+        </div>
+        <div class="letter-stack" aria-label="Exemplo ilustrativo de cartas">
+          <article class="letter-card root-letter">
+            <p class="letter-meta">De Inês · Hoje</p>
+            <h3>Uma personagem reconhecida</h3>
+            <p>O que me traz até si é o facto de no seu último livro ter albergado uma personagem procurada por um autor internacional de renome. Por questões de segurança, dir-lhe-ei de quem se trata apenas pessoalmente. Creio que o reconheci logo na página 183, embora o diálogo da estação de comboios já me tivesse posto em estado de alerta.</p>
+            <span>♡ 12</span>
+          </article>
+          <article class="letter-card reply-letter">
+            <p class="letter-meta">Resposta de Miguel à Joana · Hoje</p>
+            <p>Será que te lembras de mim? Cidade Universitária, 12.º Ano, tu, o Jorge e o… esqueci-me do nome dele, Nuno? Um dia os meus filhos perguntaram-me qual tinha sido a minha primeira namorada. Falei-lhes de ti. Os rapazes gozaram comigo e a minha filha disse-me que era batota, que não tinha havido nem beijo nem separação. Não lhe respondi, para quê? Ainda têm tanto por descobrir.</p>
+            <span>♡ 4</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="privacy" id="privacidade">
+        <div>
+          <p class="eyebrow">Com respeito por quem escreve</p>
+          <h2>Um espaço cuidado.</h2>
+        </div>
+        <div class="privacy-grid">
+          <article>
+            <h3>Moderação</h3>
+            <p>As cartas passam por revisão antes de serem publicadas.</p>
+          </article>
+          <article>
+            <h3>Privacidade</h3>
+            <p>A tua conta e as tuas preferências são geridas com segurança.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="download">
+        <p class="eyebrow">Em breve</p>
+        <h2>Prepara a tua primeira carta.</h2>
+        <p>O Marco de Correio estará disponível para iPhone, iPad e Android.</p>
+        <div class="store-buttons centered">
+          <button class="store-button apple" type="button" disabled>
+            <span class="store-icon"></span>
+            <span><small>App Store</small>Disponível em breve</span>
+          </button>
+          <button class="store-button android" type="button" disabled>
+            <span class="store-icon">▶</span>
+            <span><small>Google Play</small>Disponível em breve</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 Marco de Correio</span>
+      <a href="mailto:pnramos@gmail.com?subject=Contacto%20Marco%20de%20Correio">pnramos@gmail.com</a>
+    </footer>
+
+    <script>
+      const note = document.getElementById('device-note');
+      const agent = navigator.userAgent || '';
+      if (/iPhone|iPad|iPod/i.test(agent)) {
+        note.textContent = 'A versão para iPhone e iPad estará disponível em breve.';
+      } else if (/Android/i.test(agent)) {
+        note.textContent = 'A versão para Android estará disponível em breve.';
+      } else {
+        note.textContent = 'Quando a aplicação estiver disponível, abre este site no teu telemóvel ou tablet para a descarregar.';
+      }
+    </script>
+  </body>
+</html>
